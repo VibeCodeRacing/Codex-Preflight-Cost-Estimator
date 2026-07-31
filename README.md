@@ -53,4 +53,6 @@ python3 -m unittest -v test_cost_preflight.py
 
 ## Disable or remove
 
-Remove only the `UserPromptSubmit` entry for this command from `/Users/dougwagner/.codex/hooks.json`. Preserve any other hooks that may have been added later. The state directory can then be removed; it contains only short-lived hashes and timestamps.
+For a temporary shutoff, enter `/hooks` in Codex and disable the cost preflight hook. Return to `/hooks` to turn it back on.
+
+To remove it manually, delete only the `UserPromptSubmit` entry for this command from `/Users/dougwagner/.codex/hooks.json`. Preserve any other hooks that may have been added later. The state directory can then be removed; it contains only short-lived hashes and timestamps.
