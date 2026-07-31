@@ -1,0 +1,17 @@
+{
+  "description": "Preview Codex token and credit ranges before model dispatch.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/opt/homebrew/bin/python3 \"/Users/dougwagner/.codex/hooks/cost_preflight.py\"",
+            "timeout": 5,
+            "async": false
+          }
+        ]
+      }
+    ]
+  }
+}
