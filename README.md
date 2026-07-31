@@ -29,9 +29,9 @@ These are Codex credit estimates, not dollar estimates. API-key sessions use API
 
 ## Installed locations
 
-- Hook script: `/Users/dougwagner/.codex/hooks/cost_preflight.py`
-- Hook definition: `/Users/dougwagner/.codex/hooks.json`
-- Short-lived hash state: `/Users/dougwagner/.codex/cost-preflight/state`
+- Hook script: `$HOME/.codex/hooks/cost_preflight.py`
+- Hook definition: `$HOME/.codex/hooks.json`
+- Short-lived hash state: `$HOME/.codex/cost-preflight/state`
 
 Codex may ask you to review and trust the new command hook the first time it discovers it. Review the command and approve it through the normal hook trust UI. Do not bypass hook trust.
 
@@ -55,4 +55,4 @@ python3 -m unittest -v test_cost_preflight.py
 
 For a temporary shutoff, enter `/hooks` in Codex and disable the cost preflight hook. Return to `/hooks` to turn it back on.
 
-To remove it manually, delete only the `UserPromptSubmit` entry for this command from `/Users/dougwagner/.codex/hooks.json`. Preserve any other hooks that may have been added later. The state directory can then be removed; it contains only short-lived hashes and timestamps.
+To remove it manually, delete only the `UserPromptSubmit` entry for this command from `$HOME/.codex/hooks.json`. Preserve any other hooks that may have been added later. The state directory can then be removed; it contains only short-lived hashes and timestamps.
